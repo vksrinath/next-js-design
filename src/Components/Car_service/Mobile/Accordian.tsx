@@ -150,7 +150,7 @@ export default function Accordion() {
               </span>
             </span>
           </button>
-          {openCategory === index && service.items && (
+          {openCategory === index && service.items ? (
             <div className=" space-y-2 bg-white pt-4">
               {service.items.map((item, i) => (
                 <div
@@ -210,6 +210,14 @@ export default function Accordion() {
                 </div>
               ))}
             </div>
+          ) : (
+            <>
+              {openCategory === index && (
+                <div className=" space-y-2 bg-white pt-4 text-center">
+                  No Data Found
+                </div>
+              )}
+            </>
           )}
           {service.image && openCategory !== index && (
             <div className=" absolute right-0 bottom-0">

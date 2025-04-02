@@ -4,7 +4,7 @@ import React from "react";
 const Secure = () => {
   return (
     <div className="flex justify-center items-center mt-10 flex-col gap-28 max-lg:gap-8">
-      <h1 className="text-2xl max-md:text-xl font-extrabold">
+      <h1 className="text-2xl max-md:text-lg font-extrabold">
         Car Brands we service
       </h1>
       <Image

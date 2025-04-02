@@ -17,7 +17,7 @@ const Slides = ({ slide }: { slide: slidesProps }) => {
           <p className="text-lg">{slide.subtitle}</p>
           <div>
             <p className="text-green-400 font-semibold">{slide.offer}</p>
-            <button className="bg-white text-blue-700 font-bold py-3 px-12 rounded-md text-sm mt-1">
+            <button className="bg-white text-blue-700 font-bold py-3 px-12 rounded-md text-sm mt-1 cursor-pointer">
               {slide.button}
             </button>
           </div>

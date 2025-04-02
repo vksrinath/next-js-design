@@ -50,7 +50,7 @@ export default function AccordianCarServiceUI() {
           style={{
             letterSpacing: "2px",
           }}
-          className="w-full text-xs bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0] text-white py-3 rounded-sm font-semibold mt-4"
+          className="w-full cursor-pointer text-xs bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0] text-white py-3 rounded-sm font-semibold mt-4"
         >
           BOOK A SERVICE
         </button>

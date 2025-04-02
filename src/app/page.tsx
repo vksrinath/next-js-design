@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="pt-[70px]">
+      <div className="pt-[70px] max-lg:pt-[40px]">
         <div className=" max-md:hidden flex-col">
           <Carasoal />
           <div className="flex justify-center items-center gap-10 mt-10 max-md:hidden flex-col">
@@ -25,9 +25,9 @@ export default function Home() {
           <Mobile_carasoal />
           <div className="justify-center items-center mt-10 max-md:flex hidden flex-col">
             <AccordianCarServiceUI />
-            <div className="flex items-center space-x-6 pt-4 mt-4">
-              <div>
-                <div className="flex items-center space-x-1 ">
+            <div className="flex items-center space-x-6 pt-4 mt-4 px-3">
+              <div className="flex items-center justify-center flex-col">
+                <div className="flex items-center justify-center space-x-1 ">
                   {[...Array(5)].map((_, d) => {
                     return (
                       <FaStar
@@ -38,7 +38,7 @@ export default function Home() {
                     );
                   })}
                 </div>
-                <span className="text-xs mt-1">Based on 100+ ratings</span>
+                <span className="text-[10px] mt-1">Based on 100+ ratings</span>
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ export default function Home() {
                 </svg>
                 <div className="flex space-x-2 flex-col text-left">
                   <p className="text-2xl">5000+ </p>
-                  <p className="text-xs">Registered users</p>
+                  <p className="text-[10px]">Registered users</p>
                 </div>
               </div>
             </div>

@@ -60,8 +60,8 @@ export default function Scrolling() {
   return (
     <div className="flex justify-center items-center mt-10 flex-col gap-10">
       <div className="text-center">
-        <h1 className="text-xl max-md:text-sm font-semibold">Brands we Use</h1>
-        <h2 className="text-sm max-md:text-xs text-gray-500">
+        <h1 className="text-xl max-md:text-lg font-semibold">Brands we Use</h1>
+        <h2 className="text-md mt-1 max-md:text-sm text-gray-500">
           Authorised/genuine OEM/OES Parts
         </h2>
       </div>

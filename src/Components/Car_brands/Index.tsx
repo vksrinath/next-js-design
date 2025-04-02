@@ -4,7 +4,7 @@ import Service from "./Service/Index";
 
 const Main = () => {
   return (
-    <div className="flex mt-8 w-[95%] gap-10">
+    <div className="flex w-[95%] gap-10">
       <div className="w-1/2 max-lg:w-full">
         <Secure />
       </div>

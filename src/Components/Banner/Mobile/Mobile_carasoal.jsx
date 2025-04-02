@@ -27,7 +27,7 @@ const slides = [
 
 const SwiperSlider = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto px-4">
+    <div className="w-full px-4">
       <Swiper
         modules={[Navigation]}
         spaceBetween={30}
@@ -36,7 +36,7 @@ const SwiperSlider = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="bg-gradient-to-t from-[#0841D1] to-[#6B01D8] p-6 rounded-2xl shadow-lg relative w-[375px] h-[370px] flex flex-col justify-between">
+            <div className="bg-gradient-to-t from-[#0841D1] to-[#6B01D8] p-6 rounded-2xl shadow-lg relative h-[370px] flex flex-col justify-between">
               <div className="absolute inset-0 opacity-30">
                 <Image
                   src={slide.image}

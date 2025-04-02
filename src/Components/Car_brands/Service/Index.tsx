@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div className="flex justify-center items-center mt-10 flex-col gap-16 relative">
       <div className="absolute right-0 top-8">
-        <div className=" p-2 rounded-full bg-white shadow-2xl">
+        <div className=" p-2 rounded-full bg-white shadow-2xl cursor-pointer">
           <Image
             src={"/svg/phone.svg"}
             width={40}
@@ -25,35 +25,35 @@ const Service = () => {
           <span className="flex items-center">
             <Image
               src={"/svg/car.svg"}
-              width={80}
+              width={90}
               height={50}
               unoptimized
               alt="Car"
             />
           </span>
         </li>
-        <li className="flex md:w-full justify-center">
-          <Image src="/svg/arrow.svg" width={50} height={20} alt="Arrow" />
+        <li className="flex md:w-full justify-center items-start mb-16">
+          <Image src="/svg/arrow.svg" width={90} height={30} alt="Arrow" />
         </li>
         <li className="flex md:w-full items-center text-blue-600 dark:text-blue-500">
           <span className="flex items-center">
             <Image
               src={"/svg/schedule.svg"}
-              width={80}
+              width={90}
               height={50}
               unoptimized
               alt="Car"
             />
           </span>
         </li>
-        <li className="flex md:w-full justify-center">
-          <Image src="/svg/arrow.svg" width={50} height={20} alt="Arrow" />
+        <li className="flex md:w-full justify-center  items-start mb-16">
+          <Image src="/svg/arrow.svg" width={90} height={30} alt="Arrow" />
         </li>
         <li className="flex md:w-full items-center text-blue-600 dark:text-blue-500">
           <span className="flex items-center">
             <Image
               src={"/svg/address.svg"}
-              width={100}
+              width={110}
               height={50}
               unoptimized
               alt="Car"

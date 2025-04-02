@@ -48,7 +48,7 @@ const Tab_Content = ({ services }: any) => {
                 style={{
                   letterSpacing: "2px",
                 }}
-                className="mt-5 px-10 text-sm py-3 text-white uppercase rounded-sm bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0]"
+                className="mt-5 cursor-pointer px-10 text-sm py-3 text-white uppercase rounded-sm bg-gradient-to-r from-[#0060EF] via-[#150190] to-[#8601F0]"
               >
                 Book Now
               </button>
