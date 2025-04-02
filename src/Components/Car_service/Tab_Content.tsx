@@ -43,7 +43,9 @@ const Tab_Content = ({ services }: any) => {
                 />{" "}
                 {service.details}
               </p>
-              <p className="text-xs mt-1 text-[#0060EF]">See details</p>
+              <p className="text-xs hover:underline mt-1 cursor-pointer text-[#0060EF]">
+                See details
+              </p>
               <button
                 style={{
                   letterSpacing: "2px",
