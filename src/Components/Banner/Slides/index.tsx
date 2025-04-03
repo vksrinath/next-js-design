@@ -7,31 +7,36 @@ import { slidesProps } from "../Carasoal";
 const Slides = ({ slide }: { slide: slidesProps }) => {
   return (
     <>
-      <div className="flex items-center justify-between p-10 px-32 max-lg:10 bg-gradient-to-r from-[#0841D1] to-[#6B01D8] text-white h-[500px] max-lg:h-[400px]">
+      <div className="flex items-center justify-between p-10 px-20 max-lg:10 bg-gradient-to-r from-[#0841D1] to-[#6B01D8] text-white h-[630px] max-lg:h-[400px]">
         <div className="w-1/2 max-lg:w-full space-y-4">
-          <p className="text-sm text-gray-200">{slide.location}</p>
+          <p className="text-lg text-gray-200">{slide.location}</p>
           <h1
-            className="text-5xl font-bold"
+            className="text-6xl font-extrabold"
             dangerouslySetInnerHTML={{ __html: slide.title }}
           ></h1>
-          <p className="text-lg">{slide.subtitle}</p>
+          <p className="text-2xl">{slide.subtitle}</p>
           <div>
-            <p className="text-green-400 font-semibold">{slide.offer}</p>
-            <button className="bg-white text-blue-700 font-bold py-3 px-12 rounded-md text-sm mt-1 cursor-pointer">
+            <p className="text-[#66FFC7] text-lg font-light">{slide.offer}</p>
+            <button
+              style={{
+                letterSpacing: "3px",
+              }}
+              className="bg-white text-[#1A70F1] font-extrabold w-[40%] py-4 rounded-md text-xs mt-1 cursor-pointer"
+            >
               {slide.button}
             </button>
           </div>
 
-          <div className="flex items-center space-x-6 pt-4">
-            <div>
+          <div className="flex items-center space-x-6 pt-8">
+            <div className="justify-center flex items-center flex-col">
               <div className="flex items-center space-x-1 ">
                 {[...Array(slide.rating)].map((_, d) => {
                   return (
-                    <FaStar key={d} fontSize={22} className="text-[#FADB14]" />
+                    <FaStar key={d} fontSize={25} className="text-[#FADB14]" />
                   );
                 })}
               </div>
-              <span className="text-sm text-gray-300 mt-1">
+              <span className="text-xs mt-2 font-light">
                 Based on 100+ ratings
               </span>
             </div>
@@ -44,7 +49,7 @@ const Slides = ({ slide }: { slide: slidesProps }) => {
             >
               <rect width="1" height="36" rx="0.5" fill="#6B6B80" />
             </svg>
-            <div className="flex items-center space-x-2 ">
+            <div className="flex items-center space-x-3 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -104,8 +109,8 @@ const Slides = ({ slide }: { slide: slidesProps }) => {
                 </g>
               </svg>
               <div className="flex space-x-2 flex-col text-left">
-                <p className="text-xl">5000+ </p>
-                <p className="text-sm">Registered users</p>
+                <p className="text-2xl font-light">5000+ </p>
+                <p className="text-xs font-light mt-1">Registered users</p>
               </div>
             </div>
           </div>
@@ -115,8 +120,8 @@ const Slides = ({ slide }: { slide: slidesProps }) => {
           <Image
             src={slide.image}
             alt="Car Service"
-            width={550}
-            height={450}
+            width={730}
+            height={650}
             className="rounded-lg"
           />
         </div>

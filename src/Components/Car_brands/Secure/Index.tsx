@@ -3,8 +3,8 @@ import React from "react";
 
 const Secure = () => {
   return (
-    <div className="flex justify-center items-center mt-10 flex-col gap-28 max-lg:gap-8">
-      <h1 className="text-2xl max-md:text-lg font-extrabold">
+    <div className="flex justify-center items-center mt-8 flex-col gap-28 max-lg:gap-8">
+      <h1 className="text-4xl max-md:text-lg text-[#373751] font-extrabold">
         Car Brands we service
       </h1>
       <Image
@@ -12,7 +12,7 @@ const Secure = () => {
         width={0}
         height={0}
         unoptimized
-        className="w-auto h-auto"
+        className="w-full h-auto"
         alt="...."
       />
     </div>

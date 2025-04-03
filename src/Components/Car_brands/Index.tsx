@@ -5,7 +5,7 @@ import Service from "./Service/Index";
 const Main = () => {
   return (
     <div className="flex w-[95%] gap-10">
-      <div className="w-1/2 max-lg:w-full">
+      <div className="w-[55%] max-lg:w-full">
         <Secure />
       </div>
       <div className="max-lg:hidden flex">
@@ -19,7 +19,7 @@ const Main = () => {
           <rect width="2" height="297" fill="#D9D9D9" />
         </svg>
       </div>
-      <div className="w-1/2 max-lg:hidden block">
+      <div className="w-[45%] max-lg:hidden block">
         <Service />
       </div>
     </div>

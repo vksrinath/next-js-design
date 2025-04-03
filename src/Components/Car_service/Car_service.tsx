@@ -70,34 +70,34 @@ export default function CarServiceUI() {
   const [activeTab, setActiveTab] = useState("periodic");
 
   return (
-    <div className="bg-gradient-to-b from-indigo-900 to-indigo-700 text-white w-full relative">
+    <div className="bg-[#150190] text-white w-full relative">
       <Image
         src="/assets/tabs/bg_img.png"
         alt="Background"
-        layout="fill" // Covers the entire div
-        objectFit="cover" // Ensures the image fits properly
-        className="opacity-50"
+        layout="fill"
+        objectFit="cover"
+        className="opacity-80"
       />
       <div className="w-full p-16 z-10 relative">
         <div className="w-full flex justify-between items-center">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-8">
             <Image
               src="/assets/tabs/main_car.png"
-              width={70}
-              height={70}
+              width={100}
+              height={100}
               alt="Car"
             />
             <div>
-              <div className="flex justify-center items-center gap-2">
-                <h2 className="text-xl font-bold">Maruti Swift</h2>
-                <p className="text-md font-light text-[##FCFCFC] font-[Poppins]">
+              <div className="flex justify-center items-center gap-3">
+                <h2 className="text-3xl font-bold">Maruti Swift</h2>
+                <p className="text-2xl font-light text-[##FCFCFC] font-[Poppins]">
                   Lxi, Petrol, 2009
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="mx-3 cursor-pointer"
-                  width="25"
-                  height="25"
+                  width="32"
+                  height="32"
                   viewBox="0 0 32 32"
                   fill="none"
                 >
@@ -109,37 +109,34 @@ export default function CarServiceUI() {
                   />
                 </svg>
               </div>
-              <p className="text-xl mt-1 font-semibold">DL12AT5140</p>
+              <p className="text-2xl mt-2 font-semibold">DL12AT5140</p>
             </div>
           </div>
-          <h2 className="text-xl font-bold text-right">
+          <h2 className="text-2xl font-bold text-right">
             There are 12 services <br />
             available for Maruti Swift
           </h2>
         </div>
 
-        <div className="mt-10 flex justify-between gap-5">
+        <div className="mt-5 flex justify-between gap-5">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              style={{
-                backdropFilter: "blur(25px)",
-              }}
-              className={`flex-1 py-3 cursor-pointer text-center rounded-lg border-2 border-white transition-all ${
+              className={`flex-1 py-3 cursor-pointer text-center rounded-xl border border-white transition-all ${
                 activeTab === tab.id
-                  ? "bg-white text-indigo-700 font-bold"
+                  ? "bg-white text-indigo-700 font-extrabold"
                   : "text-white font-[400] bg-[#ffffff3c]"
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
               <Image
                 src={activeTab === tab.id ? tab.icon2 : tab.icon}
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt={tab.label}
                 className="mx-auto mb-1"
               />
-              {tab.label}
+              <span className="text-xl">{tab.label}</span>
             </button>
           ))}
         </div>

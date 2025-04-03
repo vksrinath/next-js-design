@@ -29,7 +29,7 @@ export default function Carasoal() {
       offer: "Upto ₹300 Off",
       button: "BOOK A SERVICE",
       image: "/assets/banner_img_1.png",
-      rating: 4,
+      rating: 5,
       location: "Now in Bengaluru",
     },
     {

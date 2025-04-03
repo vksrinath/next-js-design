@@ -31,9 +31,9 @@ body {
 .swiper-button-next:after {
   font-family: swiper-icons;
   font-size: 12px !important;
-  font-weight: 600 !important;
+  font-weight: 1000 !important;
   background: white !important;
-  padding: 5px 8px !important;
+  padding: 12px 14px !important;
   border-radius: 100% !important;
   letter-spacing: 0;
   font-variant: initial;
