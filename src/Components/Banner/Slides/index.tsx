@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { FaStar } from "react-icons/fa";
-import { FaUsers } from "react-icons/fa6";
+
 import { slidesProps } from "../Carasoal";
+import StarRatings from "react-star-ratings";
 
 const Slides = ({ slide }: { slide: slidesProps }) => {
   return (
@@ -30,11 +30,16 @@ const Slides = ({ slide }: { slide: slidesProps }) => {
           <div className="flex items-center space-x-6 pt-8">
             <div className="justify-center flex items-center flex-col">
               <div className="flex items-center space-x-1 ">
-                {[...Array(slide.rating)].map((_, d) => {
-                  return (
-                    <FaStar key={d} fontSize={25} className="text-[#FADB14]" />
-                  );
-                })}
+                <StarRatings
+                  rating={slide.rating}
+                  numberOfStars={5}
+                  starRatedColor="#FADB14"
+                  starEmptyColor="lightgray"
+                  starDimension="30px"
+                  starSpacing="1px"
+                  svgIconPath="M25.5703 12.0286L18.4789 10.998L15.3089 4.57138C15.2223 4.39542 15.0799 4.25298 14.9039 4.1664C14.4626 3.94855 13.9264 4.13009 13.7057 4.57138L10.5357 10.998L3.44436 12.0286C3.24885 12.0565 3.0701 12.1487 2.93325 12.2884C2.76779 12.4584 2.67662 12.6872 2.67977 12.9244C2.68291 13.1617 2.78011 13.388 2.95 13.5536L8.08069 18.5558L6.86854 25.6192C6.84011 25.7835 6.8583 25.9525 6.92102 26.107C6.98375 26.2615 7.08852 26.3953 7.22344 26.4933C7.35836 26.5913 7.51804 26.6495 7.68436 26.6614C7.85069 26.6733 8.01702 26.6383 8.16448 26.5604L14.5073 23.2256L20.8501 26.5604C21.0233 26.6526 21.2244 26.6833 21.4171 26.6498C21.9031 26.566 22.2299 26.1052 22.1461 25.6192L20.9339 18.5558L26.0646 13.5536C26.2043 13.4167 26.2964 13.238 26.3244 13.0425C26.3998 12.5537 26.059 12.1012 25.5703 12.0286Z"
+                  svgIconViewBox="0 0 29 30"
+                />
               </div>
               <span className="text-xs mt-2 font-light">
                 Based on 100+ ratings

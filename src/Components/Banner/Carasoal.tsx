@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-// import required modules
 import { Navigation } from "swiper/modules";
 import Slides from "./Slides";
 
@@ -29,7 +27,7 @@ export default function Carasoal() {
       offer: "Upto ₹300 Off",
       button: "BOOK A SERVICE",
       image: "/assets/banner_img_1.png",
-      rating: 5,
+      rating: 4.5,
       location: "Now in Bengaluru",
     },
     {
@@ -38,7 +36,7 @@ export default function Carasoal() {
       offer: "Upto ₹300 Off",
       button: "BOOK A SERVICE",
       image: "/assets/banner_img_2.png",
-      rating: 5,
+      rating: 3,
       location: "Now in Bengaluru",
     },
   ];
